@@ -1,0 +1,8 @@
+{
+  "name": "BCA Study App",
+  "description": "Comprehensive study and practice platform for BCA curriculum covering subjects, unit topics, diagrams, notes, and interactive quizzes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
