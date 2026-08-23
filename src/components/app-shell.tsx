@@ -17,7 +17,7 @@ export function AppShell({ children }: { children: ReactNode }) {
     <div lang={lang === "hi" ? "hi" : "en"} className="relative min-h-dvh">
       <div className="liquid-bg" aria-hidden="true" />
       <header className="sticky top-0 z-40 px-3 pt-3 md:px-6 md:pt-4">
-        <div className="glass mx-auto grid max-w-6xl grid-cols-[1fr_auto] items-center gap-3 rounded-xl px-3 py-3 md:grid-cols-[1fr_auto_1fr] md:px-5">
+        <div className="glass-header mx-auto grid max-w-6xl grid-cols-[1fr_auto] items-center gap-3 rounded-2xl px-3 py-3 md:grid-cols-[1fr_auto_1fr] md:px-5">
           <Logo className="px-1 py-1" />
           <div className="flex items-center justify-end md:order-3">
             <LangSwitch />
