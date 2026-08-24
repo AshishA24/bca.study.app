@@ -449,14 +449,14 @@ test("strips install params from the app link", () => {
 });
 
 test("names the install page from host slug", () => {
-  assert.equal(appNameFromHost("localhost:8080"), "Liquid Study");
-  assert.equal(appNameFromHost("172.17.154.217:8080"), "Liquid Study");
+  assert.equal(appNameFromHost("localhost:8080"), "Grok App");
+  assert.equal(appNameFromHost("172.17.154.217:8080"), "Grok App");
   assert.equal(appNameFromHost("wild-race.grok.me"), "Wild Race");
 });
 
 test("rejects hosts that are not plain slugs", () => {
-  assert.equal(appNameFromHost("<script>alert(1)</script>"), "Liquid Study");
-  assert.equal(appNameFromHost('"><img src=x onerror=1>.grok.me'), "Liquid Study");
+  assert.equal(appNameFromHost("<script>alert(1)</script>"), "Grok App");
+  assert.equal(appNameFromHost('"><img src=x onerror=1>.grok.me'), "Grok App");
 });
 
 test("renders install page markup", () => {
@@ -503,3 +503,4 @@ test("vite plugin bakes og identity as a virtual module", () => {
   assert.match(plugin, /virtual:grok-og-identity/);
   assert.match(plugin, /snapshotOgIdentity/);
 });
+
